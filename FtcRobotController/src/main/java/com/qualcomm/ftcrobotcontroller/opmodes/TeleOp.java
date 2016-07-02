@@ -6,6 +6,8 @@ package com.qualcomm.ftcrobotcontroller.opmodes;
 public class TeleOp extends TheOpMode
 {
     int curMode;
+
+    //Macro information
     boolean inMacroA;
 
     //Controller values
@@ -92,13 +94,19 @@ public class TeleOp extends TheOpMode
     public void loop()
     {
         updateControllerVals();
-        boolean inMacroA = false;
         if(inMacroA)
         {
             //Check if done with macro OR interrupted
-            //Run other things
-            //Set isMacroA to false
+            if(isMacroAComplete()||macroInterrupted("A"))
+            {
+                inMacroA = false; //Set isMacroA to false
+                loop(); //Back to normal teleop
+            }
+
+
+
             //Otherwise
+            setLiftSpeed(0.5);
             //Run the motors and servos for what the macro is supposed to do
         }
         else //Standard mode stuff
@@ -113,6 +121,10 @@ public class TeleOp extends TheOpMode
             }
             else if(curMode == 2) //If mode 2 (near mountain mode)
             {
+                setLeftSideSpeed(-g1y2);
+                setRightSideSpeed(g1y1);
+                setLiftSpeed(g2y1);
+                setHookServosUpOrDown(g2Lbump);
                 //Do mode 2 stuff
             }
             else if(curMode == 3) //If mode 3 (hooked onto mountain mode)

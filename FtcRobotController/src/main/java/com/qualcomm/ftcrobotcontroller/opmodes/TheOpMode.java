@@ -9,14 +9,29 @@ import java.math.*;
 import android.util.Log;
 import com.qualcomm.robotcore.exception.RobotCoreException;
 
+/**
+ * @author      Spencer Sharp <address @ example.com>
+ * @author      Steven Lo
+ * @version     1.6                 (current version number of program)
+ * @since       1.2          (the version of the package this class was first added to)
+ */
 public class TheOpMode extends OpMode
 {
 	//IMU name
 	AdafruitIMU imu;
 
     //Motors
+    /**
+     * DcMotor variable for our front left motor
+     */
     DcMotor motorFL;
+    /**
+     * DcMotor variable for our back left motor
+     */
     DcMotor motorBL;
+    /**
+     * DcMotor variable for our front right motor
+     */
     DcMotor motorFR;
     DcMotor motorBR;
     DcMotor motorLiftL;
@@ -84,6 +99,7 @@ public class TheOpMode extends OpMode
     /**
      * Initializes the IMU.
      * <p>
+     * Uses the hardware map, chosen name of the IMU, the IMU address, and the operation mode to set the local "imu" variable to the object to be accessed later.
      * Call this method in init() for best results, the IMU can take a couple seconds to initialize.
      */
     public void initializeIMU()
@@ -105,6 +121,7 @@ public class TheOpMode extends OpMode
 
     /**
      * Updates all the motor speeds.
+     * <p>
      * Calls motor.setPower(speed); for all the motors and their speeds
      */
     public void updateMotorSpeeds()
@@ -123,9 +140,10 @@ public class TheOpMode extends OpMode
     }
 
     /**
-     * Updates all the servo positions.
+     * Updates all the servos' positions
      * <p>
      * Calls servo.setPosition(position); for all the servos and their positions
+     * These "positions" are determined by the servoPosition double variables
      */
     public void updateServoPositions()
     {
@@ -137,7 +155,23 @@ public class TheOpMode extends OpMode
         servoHookR.setPosition(servoHookRPosition);
     }
 
-    //Sets the speed of the motors controlling the wheels on the left side of the robot
+    /**
+     * Stops all of the motors.
+     * <p>
+     * This method should be used to control the robot when precise movement is needed. Also use this vs.
+     * scaleControlledSimple when one or less method calls per second are needed, or extreme precision.
+     */
+    public void stopMotors()
+    {
+        motorFLSpeed = 0.0;
+    }
+
+    /**
+     * Sets the speed of the motors controlling the wheels on the left side of the robot
+     * <p>
+     * Calls servo.setPosition(position); for all the servos and their positions
+     * These "positions" are determined by the servoPosition double variables
+     */
     public void setLeftSideSpeed(double speed)
     {
         motorFLSpeed = speed;
@@ -158,9 +192,9 @@ public class TheOpMode extends OpMode
         motorLiftRSpeed = speed;
     }
 
-    public void setHookServosUpOrDown(boolean isLatchedDown)
+    public void setHookServosUpOrDown(boolean latchDown)
     {
-        if(isLatchedDown)
+        if(latchDown)
         {
             //Set servos to latched down position
         }

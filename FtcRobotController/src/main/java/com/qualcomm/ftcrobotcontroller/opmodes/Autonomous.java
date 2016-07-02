@@ -8,6 +8,12 @@ public class Autonomous extends TheOpMode
     boolean isStopped;
     long timeOfStop;
 
+    /**
+     * Method called when a step ends. Stops the robot and resets variables.
+     * <p>
+     * This method should be used to control the robot when precise movement is needed. Also use this vs.
+     * scaleControlledSimple when one or less method calls per second are needed, or extreme precision.
+     */
     @Override
     public void init()
     {
@@ -17,6 +23,12 @@ public class Autonomous extends TheOpMode
         isStopped = false;
     }
 
+    /**
+     * Method called when a step ends. Stops the robot and resets variables.
+     * <p>
+     * This method should be used to control the robot when precise movement is needed. Also use this vs.
+     * scaleControlledSimple when one or less method calls per second are needed, or extreme precision.
+     */
     public void endStep()
     {
         stopMotors();

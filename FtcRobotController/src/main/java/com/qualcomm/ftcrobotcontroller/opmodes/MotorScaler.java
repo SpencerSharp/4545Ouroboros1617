@@ -39,7 +39,7 @@ public abstract class MotorScaler
      * @return a double representing the value sent to the motor in order to obtain the mA value
      * @see    MotorScaler.scaleExact(double inpFromController)
      */
-    public double scaleSimple(double inpFromController)
+    public static double scaleSimple(double inpFromController)
     {
         double valToMotor;                              //Value to return as the value that should be send to the motor
         double[] sendValues = {                         //Array representing all values that can be sent, in increments of 0.05
@@ -83,7 +83,7 @@ public abstract class MotorScaler
      * @return a double representing the value sent to the motor in order to obtain the mA value
      * @see    MotorScaler.scaleSimple(double inpFromController)
      */
-    public double scaleExact(double inpFromController)
+    public static double scaleExact(double inpFromController)
     {
         double valToMotor = 0.0;
 
@@ -104,7 +104,7 @@ public abstract class MotorScaler
      * @return a double representing the value sent to the motor in order to obtain the mA value
      * @see    MotorScaler.scaleControlledExact(double inpFromController)
      */
-    public double scaleControlledSimple(double inpFromController)
+    public static double scaleControlledSimple(double inpFromController)
     {
         double valToMotor = 0.0;
 
