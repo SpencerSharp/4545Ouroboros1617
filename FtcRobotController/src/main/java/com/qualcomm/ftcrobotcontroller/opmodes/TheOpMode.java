@@ -36,12 +36,13 @@ public class TheOpMode extends OpMode
     DcMotor motorBR;
     DcMotor motorLiftL;
     DcMotor motorLiftR;
-    DcMotor motorManipL;
-    DcMotor motorManipR;
+    DcMotor motorManip;
 
     //Servos
     Servo servoBasketL;
     Servo servoBasketR;
+    Servo servoDumpL;
+    Servo servoDumpR;
     Servo servoHookL;
     Servo servoHookR;
 
@@ -52,12 +53,13 @@ public class TheOpMode extends OpMode
     double motorBRSpeed;
     double motorLiftLSpeed;
     double motorLiftRSpeed;
-    double motorManipLSpeed;
-    double motorManipRSpeed;
+    double motorManipSpeed;
 
     //Servo positions
     double servoBasketLPosition;
     double servoBasketRPosition;
+    double servoDumpLPosition;
+    double servoDumpRPosition;
     double servoHookLPosition;
     double servoHookRPosition;
 
@@ -77,8 +79,7 @@ public class TheOpMode extends OpMode
         motorLiftL = hardwareMap.dcMotor.get("motorLiftL");
         motorLiftR = hardwareMap.dcMotor.get("motorLiftR");
         //Manipulator motors
-        motorManipL = hardwareMap.dcMotor.get("motorManipL");
-        motorManipR = hardwareMap.dcMotor.get("motorManipR");
+        motorManip = hardwareMap.dcMotor.get("motorManip");
     }
 
     /**
@@ -88,9 +89,12 @@ public class TheOpMode extends OpMode
      */
     public void initializeServos()
     {
-        //Turntable servos
+        //Basket servos
         servoBasketL = hardwareMap.servo.get("servoBasketL");
         servoBasketR = hardwareMap.servo.get("servoBasketR");
+        //Dump servos
+        servoDumpL = hardwareMap.servo.get("servoDumpL");
+        servoDumpR = hardwareMap.servo.get("servoDumpR");
         //Hook servos
         servoHookL = hardwareMap.servo.get("servoHookL");
         servoHookR = hardwareMap.servo.get("servoHookR");
@@ -135,8 +139,7 @@ public class TheOpMode extends OpMode
         motorLiftL.setPower(motorLiftLSpeed);
         motorLiftR.setPower(motorLiftRSpeed);
         //Manipulator motors
-        motorManipL.setPower(motorManipLSpeed);
-        motorManipR.setPower(motorManipRSpeed);
+        motorManip.setPower(motorManipSpeed);
     }
 
     /**
@@ -147,9 +150,12 @@ public class TheOpMode extends OpMode
      */
     public void updateServoPositions()
     {
-        //Turntable servos
+        //Basket servos
         servoBasketL.setPosition(servoBasketLPosition);
         servoBasketR.setPosition(servoBasketRPosition);
+        //Dumper servos
+        servoDumpL.setPosition(servoDumpLPosition);
+        servoDumpR.setPosition(servoDumpRPosition);
         //Hook servos
         servoHookL.setPosition(servoHookLPosition);
         servoHookR.setPosition(servoHookRPosition);
@@ -196,12 +202,52 @@ public class TheOpMode extends OpMode
     {
         if(latchDown)
         {
-            //Set servos to latched down position
+            servoHookLPosition = 0.0;
+            servoHookRPosition = 0.0;
         }
         else
         {
-            //Set servos to not latched down position
+            servoHookLPosition = 0.0;
+            servoHookRPosition = 0.0;
         }
+    }
+
+    public void dumpBasketRight()
+    {
+        servoDumpRPosition = 0.0;
+    }
+
+    public void retractBasketRight()
+    {
+        servoDumpRPosition = 1.0;
+    }
+
+    public void dumpBasketLeft()
+    {
+        servoDumpLPosition = 0.0;
+    }
+
+    public void retractBasketLeft()
+    {
+        servoDumpLPosition = 1.0;
+    }
+
+    public void moveBasketLeft()
+    {
+        servoBasketLPosition = 1.0;
+        servoBasketRPosition = 1.0;
+    }
+
+    public void moveBasketRight()
+    {
+        servoBasketLPosition = 0.0;
+        servoBasketRPosition = 0.0;
+    }
+
+    public void stopBasketMove()
+    {
+        servoBasketLPosition = 0.5;
+        servoBasketLPosition = 0.5;
     }
 
 	@Override
@@ -209,7 +255,7 @@ public class TheOpMode extends OpMode
     {
         initializeMotors();
         initializeServos();
-        initializeIMU();
+        //initializeIMU();
 	}
 
 	@Override
@@ -221,7 +267,7 @@ public class TheOpMode extends OpMode
     @Override
     public void start()
     {
-        startIMU();
+        //startIMU();
     }
 
 	//Parent loop

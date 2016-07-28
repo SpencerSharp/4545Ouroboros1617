@@ -6,9 +6,13 @@ package com.qualcomm.ftcrobotcontroller.opmodes;
 public class TeleOp extends TheOpMode
 {
     int curMode;
+    int prevMode;
 
     //Macro information
     boolean inMacroA;
+
+    boolean isRedSide;
+    boolean isBlueSide;
 
     //Controller values
     double g1y1;
@@ -36,11 +40,15 @@ public class TeleOp extends TheOpMode
     boolean g1BPressed;
     boolean g2BPressed;
 
+    boolean haveSticksBeenPushedUpSinceModeChanged;
+
     @Override
     public void init()
     {
+        prevMode = 1;
         curMode = 1;
         inMacroA = false;
+        haveSticksBeenPushedUpSinceModeChanged = false;
         super.init();
     }
 
@@ -58,7 +66,28 @@ public class TeleOp extends TheOpMode
 
     public void updateMode()
     {
-
+        prevMode = curMode; //Changes the previous mode to the current mode
+        if (curMode != 0) //Updates current mode
+        {
+            if (g2XPressed && curMode != 1) //If Controller 2 X is pressed, switch to mode 1
+            {
+                curMode = 1;
+                if (g1y1 < -0.1 && g1y2 < -0.1) //Are sticks pushed down
+                    haveSticksBeenPushedUpSinceModeChanged = true; //The sticks have been pushed up
+                else
+                    haveSticksBeenPushedUpSinceModeChanged = false; //The sticks have not been pushed up
+            } else if ((g2BPressed && curMode != 2)) //|| (curPitch > 10 || curPitch < -10)) //If Controller 2 B is pressed, switch to mode 2
+            {
+                curMode = 2;
+                if (g1y1 < -0.1 && g1y2 < -0.1) //Are sticks pushed up
+                    haveSticksBeenPushedUpSinceModeChanged = true; //The sticks have been pushed up
+                else
+                    haveSticksBeenPushedUpSinceModeChanged = false; //The sticks have not been pushed up
+            }
+            //Else keep current mode
+        }
+        if (g1y1 < 0 || g1y2 < 0) //Are sticks pushed up
+            haveSticksBeenPushedUpSinceModeChanged = true; //The sticks have been pushed up
     }
 
     public void updateControllerVals()
@@ -94,8 +123,10 @@ public class TeleOp extends TheOpMode
     public void loop()
     {
         updateControllerVals();
+        updateMode();
         if(inMacroA)
         {
+            /*
             //Check if done with macro OR interrupted
             if(isMacroAComplete()||macroInterrupted("A"))
             {
@@ -108,29 +139,68 @@ public class TeleOp extends TheOpMode
             //Otherwise
             setLiftSpeed(0.5);
             //Run the motors and servos for what the macro is supposed to do
+            */
         }
         else //Standard mode stuff
         {
             updateMode();
             if(curMode == 1) //If mode 1 (ground movement standard mode)
             {
-                setLeftSideSpeed(g1y1);
-                setRightSideSpeed(-g1y2);
+                setLeftSideSpeed(MotorScaler.scaleSimple(g1y1));
+                setRightSideSpeed(MotorScaler.scaleSimple(-g1y2));
                 setLiftSpeed(g2y1);
                 setHookServosUpOrDown(g2Lbump);
             }
             else if(curMode == 2) //If mode 2 (near mountain mode)
             {
-                setLeftSideSpeed(-g1y2);
-                setRightSideSpeed(g1y1);
-                setLiftSpeed(g2y1);
-                setHookServosUpOrDown(g2Lbump);
-                //Do mode 2 stuff
+                if(!haveSticksBeenPushedUpSinceModeChanged) //Sticks have not been pushed up
+                {
+                    //Controller 1
+                    //Left Stick
+                    setLeftSideSpeed(MotorScaler.scaleSimple(g1y1)); //Moves left side of robot (Manipulator is front of robot)
+                    //Right Stick
+                    setRightSideSpeed(MotorScaler.scaleSimple(-g1y2)); //Moves right side of robot (Manipulator is front of robot)
+                    setLiftSpeed(g2y1);
+                    setHookServosUpOrDown(g2Lbump);
+                }
+                else
+                {
+                    setLeftSideSpeed(MotorScaler.scaleSimple(-g1y2));
+                    setRightSideSpeed(MotorScaler.scaleSimple(g1y1));
+                    setLiftSpeed(g2y1);
+                    setHookServosUpOrDown(g2Lbump);
+                }
             }
-            else if(curMode == 3) //If mode 3 (hooked onto mountain mode)
-            {
-                //Do mode 3 stuff
-            }
+        }
+        if(g2x2 > 0.1)
+        {
+            moveBasketRight();
+        }
+        else if(g2x2 < -0.1)
+        {
+            moveBasketLeft();
+        }
+        else
+        {
+            stopBasketMove();
+        }
+
+        if(g2Ltrig>0.1)
+        {
+            dumpBasketLeft();
+        }
+        else if(g2Lbump)
+        {
+            retractBasketLeft();
+        }
+
+        if(g2Rtrig>0.1)
+        {
+            dumpBasketRight();
+        }
+        else if(g2Rbump)
+        {
+            retractBasketRight();
         }
         super.loop(); //Updates motor speeds and servo positions
     }
