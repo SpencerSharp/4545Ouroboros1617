@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/Users/spencersharp/Desktop/GitHub/Robotics Repositories/2016-2017 4545/4545Ouroboros1617/Team4545/build/intermediates/res/merged/debug/drawable-xhdpi-v4/icon_menu.png",
+        "source": "/Users/spencersharp/Desktop/GitHub/Robotics Repositories/2016-2017 4545/4545Ouroboros1617/Team4545/build/intermediates/exploded-aar/4545Ouroboros1617/FtcRobotController/unspecified/res/drawable-xhdpi-v4/icon_menu.png"
+    },
+    {
+        "merged": "/Users/spencersharp/Desktop/GitHub/Robotics Repositories/2016-2017 4545/4545Ouroboros1617/TeamCode/build/intermediates/res/merged/debug/drawable-xhdpi-v4/icon_menu.png",
+        "source": "/Users/spencersharp/Desktop/GitHub/Robotics Repositories/2016-2017 4545/4545Ouroboros1617/TeamCode/build/intermediates/exploded-aar/4545Ouroboros1617/FtcRobotController/unspecified/res/drawable-xhdpi-v4/icon_menu.png"
+    },
+    {
+        "merged": "/Users/spencersharp/Desktop/GitHub/Robotics Repositories/2016-2017 4545/4545Ouroboros1617/Team4545/build/intermediates/res/merged/debug/drawable-xhdpi-v4/icon_robotcontroller.png",
+        "source": "/Users/spencersharp/Desktop/GitHub/Robotics Repositories/2016-2017 4545/4545Ouroboros1617/Team4545/build/intermediates/exploded-aar/4545Ouroboros1617/FtcRobotController/unspecified/res/drawable-xhdpi-v4/icon_robotcontroller.png"
+    },
+    {
+        "merged": "/Users/spencersharp/Desktop/GitHub/Robotics Repositories/2016-2017 4545/4545Ouroboros1617/TeamCode/build/intermediates/res/merged/debug/drawable-xhdpi-v4/ic_launcher.png",
+        "source": "/Users/spencersharp/Desktop/GitHub/Robotics Repositories/2016-2017 4545/4545Ouroboros1617/TeamCode/build/intermediates/exploded-aar/4545Ouroboros1617/FtcRobotController/unspecified/res/drawable-xhdpi-v4/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/spencersharp/Desktop/GitHub/Robotics Repositories/2016-2017 4545/4545Ouroboros1617/Team4545/build/intermediates/res/merged/debug/drawable-xhdpi-v4/ic_launcher.png",
+        "source": "/Users/spencersharp/Desktop/GitHub/Robotics Repositories/2016-2017 4545/4545Ouroboros1617/Team4545/build/intermediates/exploded-aar/4545Ouroboros1617/FtcRobotController/unspecified/res/drawable-xhdpi-v4/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/spencersharp/Desktop/GitHub/Robotics Repositories/2016-2017 4545/4545Ouroboros1617/TeamCode/build/intermediates/res/merged/debug/drawable-xhdpi-v4/icon_robotcontroller.png",
+        "source": "/Users/spencersharp/Desktop/GitHub/Robotics Repositories/2016-2017 4545/4545Ouroboros1617/TeamCode/build/intermediates/exploded-aar/4545Ouroboros1617/FtcRobotController/unspecified/res/drawable-xhdpi-v4/icon_robotcontroller.png"
+    }
+]

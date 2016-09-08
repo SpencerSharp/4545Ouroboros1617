@@ -1,0 +1,90 @@
+[
+    {
+        "merged": "/Users/spencersharp/Desktop/GitHub/Robotics Repositories/2016-2017 4545/4545Ouroboros1617/TeamCode/build/intermediates/res/merged/debug/raw/simple_vertex_shader.glsl",
+        "source": "/Users/spencersharp/Desktop/GitHub/Robotics Repositories/2016-2017 4545/4545Ouroboros1617/TeamCode/build/intermediates/exploded-aar/RobotCore-release/res/raw/simple_vertex_shader.glsl"
+    },
+    {
+        "merged": "/Users/spencersharp/Desktop/GitHub/Robotics Repositories/2016-2017 4545/4545Ouroboros1617/TeamCode/build/intermediates/res/merged/debug/raw/texture_vertex_shader.glsl",
+        "source": "/Users/spencersharp/Desktop/GitHub/Robotics Repositories/2016-2017 4545/4545Ouroboros1617/TeamCode/build/intermediates/exploded-aar/RobotCore-release/res/raw/texture_vertex_shader.glsl"
+    },
+    {
+        "merged": "/Users/spencersharp/Desktop/GitHub/Robotics Repositories/2016-2017 4545/4545Ouroboros1617/Team4545/build/intermediates/res/merged/debug/raw/errormessage.wav",
+        "source": "/Users/spencersharp/Desktop/GitHub/Robotics Repositories/2016-2017 4545/4545Ouroboros1617/Team4545/build/intermediates/exploded-aar/FtcCommon-release/res/raw/errormessage.wav"
+    },
+    {
+        "merged": "/Users/spencersharp/Desktop/GitHub/Robotics Repositories/2016-2017 4545/4545Ouroboros1617/TeamCode/build/intermediates/res/merged/debug/raw/cube_mesh_fragment_shader.glsl",
+        "source": "/Users/spencersharp/Desktop/GitHub/Robotics Repositories/2016-2017 4545/4545Ouroboros1617/TeamCode/build/intermediates/exploded-aar/RobotCore-release/res/raw/cube_mesh_fragment_shader.glsl"
+    },
+    {
+        "merged": "/Users/spencersharp/Desktop/GitHub/Robotics Repositories/2016-2017 4545/4545Ouroboros1617/TeamCode/build/intermediates/res/merged/debug/raw/color_fragment_shader.glsl",
+        "source": "/Users/spencersharp/Desktop/GitHub/Robotics Repositories/2016-2017 4545/4545Ouroboros1617/TeamCode/build/intermediates/exploded-aar/RobotCore-release/res/raw/color_fragment_shader.glsl"
+    },
+    {
+        "merged": "/Users/spencersharp/Desktop/GitHub/Robotics Repositories/2016-2017 4545/4545Ouroboros1617/Team4545/build/intermediates/res/merged/debug/raw/nxtstartupsound.wav",
+        "source": "/Users/spencersharp/Desktop/GitHub/Robotics Repositories/2016-2017 4545/4545Ouroboros1617/Team4545/build/intermediates/exploded-aar/FtcCommon-release/res/raw/nxtstartupsound.wav"
+    },
+    {
+        "merged": "/Users/spencersharp/Desktop/GitHub/Robotics Repositories/2016-2017 4545/4545Ouroboros1617/TeamCode/build/intermediates/res/merged/debug/raw/chimeconnect.wav",
+        "source": "/Users/spencersharp/Desktop/GitHub/Robotics Repositories/2016-2017 4545/4545Ouroboros1617/TeamCode/build/intermediates/exploded-aar/FtcCommon-release/res/raw/chimeconnect.wav"
+    },
+    {
+        "merged": "/Users/spencersharp/Desktop/GitHub/Robotics Repositories/2016-2017 4545/4545Ouroboros1617/Team4545/build/intermediates/res/merged/debug/raw/chimedisconnect.wav",
+        "source": "/Users/spencersharp/Desktop/GitHub/Robotics Repositories/2016-2017 4545/4545Ouroboros1617/Team4545/build/intermediates/exploded-aar/FtcCommon-release/res/raw/chimedisconnect.wav"
+    },
+    {
+        "merged": "/Users/spencersharp/Desktop/GitHub/Robotics Repositories/2016-2017 4545/4545Ouroboros1617/TeamCode/build/intermediates/res/merged/debug/raw/warningmessage.wav",
+        "source": "/Users/spencersharp/Desktop/GitHub/Robotics Repositories/2016-2017 4545/4545Ouroboros1617/TeamCode/build/intermediates/exploded-aar/FtcCommon-release/res/raw/warningmessage.wav"
+    },
+    {
+        "merged": "/Users/spencersharp/Desktop/GitHub/Robotics Repositories/2016-2017 4545/4545Ouroboros1617/Team4545/build/intermediates/res/merged/debug/raw/color_fragment_shader.glsl",
+        "source": "/Users/spencersharp/Desktop/GitHub/Robotics Repositories/2016-2017 4545/4545Ouroboros1617/Team4545/build/intermediates/exploded-aar/RobotCore-release/res/raw/color_fragment_shader.glsl"
+    },
+    {
+        "merged": "/Users/spencersharp/Desktop/GitHub/Robotics Repositories/2016-2017 4545/4545Ouroboros1617/Team4545/build/intermediates/res/merged/debug/raw/warningmessage.wav",
+        "source": "/Users/spencersharp/Desktop/GitHub/Robotics Repositories/2016-2017 4545/4545Ouroboros1617/Team4545/build/intermediates/exploded-aar/FtcCommon-release/res/raw/warningmessage.wav"
+    },
+    {
+        "merged": "/Users/spencersharp/Desktop/GitHub/Robotics Repositories/2016-2017 4545/4545Ouroboros1617/Team4545/build/intermediates/res/merged/debug/raw/texture_vertex_shader.glsl",
+        "source": "/Users/spencersharp/Desktop/GitHub/Robotics Repositories/2016-2017 4545/4545Ouroboros1617/Team4545/build/intermediates/exploded-aar/RobotCore-release/res/raw/texture_vertex_shader.glsl"
+    },
+    {
+        "merged": "/Users/spencersharp/Desktop/GitHub/Robotics Repositories/2016-2017 4545/4545Ouroboros1617/Team4545/build/intermediates/res/merged/debug/raw/chimeconnect.wav",
+        "source": "/Users/spencersharp/Desktop/GitHub/Robotics Repositories/2016-2017 4545/4545Ouroboros1617/Team4545/build/intermediates/exploded-aar/FtcCommon-release/res/raw/chimeconnect.wav"
+    },
+    {
+        "merged": "/Users/spencersharp/Desktop/GitHub/Robotics Repositories/2016-2017 4545/4545Ouroboros1617/TeamCode/build/intermediates/res/merged/debug/raw/chimedisconnect.wav",
+        "source": "/Users/spencersharp/Desktop/GitHub/Robotics Repositories/2016-2017 4545/4545Ouroboros1617/TeamCode/build/intermediates/exploded-aar/FtcCommon-release/res/raw/chimedisconnect.wav"
+    },
+    {
+        "merged": "/Users/spencersharp/Desktop/GitHub/Robotics Repositories/2016-2017 4545/4545Ouroboros1617/TeamCode/build/intermediates/res/merged/debug/raw/cube_mesh_vertex_shader.glsl",
+        "source": "/Users/spencersharp/Desktop/GitHub/Robotics Repositories/2016-2017 4545/4545Ouroboros1617/TeamCode/build/intermediates/exploded-aar/RobotCore-release/res/raw/cube_mesh_vertex_shader.glsl"
+    },
+    {
+        "merged": "/Users/spencersharp/Desktop/GitHub/Robotics Repositories/2016-2017 4545/4545Ouroboros1617/TeamCode/build/intermediates/res/merged/debug/raw/texture_fragment_shader.glsl",
+        "source": "/Users/spencersharp/Desktop/GitHub/Robotics Repositories/2016-2017 4545/4545Ouroboros1617/TeamCode/build/intermediates/exploded-aar/RobotCore-release/res/raw/texture_fragment_shader.glsl"
+    },
+    {
+        "merged": "/Users/spencersharp/Desktop/GitHub/Robotics Repositories/2016-2017 4545/4545Ouroboros1617/Team4545/build/intermediates/res/merged/debug/raw/texture_fragment_shader.glsl",
+        "source": "/Users/spencersharp/Desktop/GitHub/Robotics Repositories/2016-2017 4545/4545Ouroboros1617/Team4545/build/intermediates/exploded-aar/RobotCore-release/res/raw/texture_fragment_shader.glsl"
+    },
+    {
+        "merged": "/Users/spencersharp/Desktop/GitHub/Robotics Repositories/2016-2017 4545/4545Ouroboros1617/Team4545/build/intermediates/res/merged/debug/raw/simple_vertex_shader.glsl",
+        "source": "/Users/spencersharp/Desktop/GitHub/Robotics Repositories/2016-2017 4545/4545Ouroboros1617/Team4545/build/intermediates/exploded-aar/RobotCore-release/res/raw/simple_vertex_shader.glsl"
+    },
+    {
+        "merged": "/Users/spencersharp/Desktop/GitHub/Robotics Repositories/2016-2017 4545/4545Ouroboros1617/Team4545/build/intermediates/res/merged/debug/raw/cube_mesh_fragment_shader.glsl",
+        "source": "/Users/spencersharp/Desktop/GitHub/Robotics Repositories/2016-2017 4545/4545Ouroboros1617/Team4545/build/intermediates/exploded-aar/RobotCore-release/res/raw/cube_mesh_fragment_shader.glsl"
+    },
+    {
+        "merged": "/Users/spencersharp/Desktop/GitHub/Robotics Repositories/2016-2017 4545/4545Ouroboros1617/TeamCode/build/intermediates/res/merged/debug/raw/errormessage.wav",
+        "source": "/Users/spencersharp/Desktop/GitHub/Robotics Repositories/2016-2017 4545/4545Ouroboros1617/TeamCode/build/intermediates/exploded-aar/FtcCommon-release/res/raw/errormessage.wav"
+    },
+    {
+        "merged": "/Users/spencersharp/Desktop/GitHub/Robotics Repositories/2016-2017 4545/4545Ouroboros1617/Team4545/build/intermediates/res/merged/debug/raw/cube_mesh_vertex_shader.glsl",
+        "source": "/Users/spencersharp/Desktop/GitHub/Robotics Repositories/2016-2017 4545/4545Ouroboros1617/Team4545/build/intermediates/exploded-aar/RobotCore-release/res/raw/cube_mesh_vertex_shader.glsl"
+    },
+    {
+        "merged": "/Users/spencersharp/Desktop/GitHub/Robotics Repositories/2016-2017 4545/4545Ouroboros1617/TeamCode/build/intermediates/res/merged/debug/raw/nxtstartupsound.wav",
+        "source": "/Users/spencersharp/Desktop/GitHub/Robotics Repositories/2016-2017 4545/4545Ouroboros1617/TeamCode/build/intermediates/exploded-aar/FtcCommon-release/res/raw/nxtstartupsound.wav"
+    }
+]

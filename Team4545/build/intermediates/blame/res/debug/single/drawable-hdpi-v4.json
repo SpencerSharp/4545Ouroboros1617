@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/spencersharp/Desktop/GitHub/Robotics Repositories/2016-2017 4545/4545Ouroboros1617/Team4545/build/intermediates/res/merged/debug/drawable-hdpi-v4/ic_launcher.png",
+        "source": "/Users/spencersharp/Desktop/GitHub/Robotics Repositories/2016-2017 4545/4545Ouroboros1617/Team4545/build/intermediates/exploded-aar/4545Ouroboros1617/FtcRobotController/unspecified/res/drawable-hdpi-v4/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/spencersharp/Desktop/GitHub/Robotics Repositories/2016-2017 4545/4545Ouroboros1617/TeamCode/build/intermediates/res/merged/debug/drawable-hdpi-v4/ic_launcher.png",
+        "source": "/Users/spencersharp/Desktop/GitHub/Robotics Repositories/2016-2017 4545/4545Ouroboros1617/TeamCode/build/intermediates/exploded-aar/4545Ouroboros1617/FtcRobotController/unspecified/res/drawable-hdpi-v4/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/spencersharp/Desktop/GitHub/Robotics Repositories/2016-2017 4545/4545Ouroboros1617/TeamCode/build/intermediates/res/merged/debug/drawable-hdpi-v4/button_shape.xml",
+        "source": "/Users/spencersharp/Desktop/GitHub/Robotics Repositories/2016-2017 4545/4545Ouroboros1617/TeamCode/build/intermediates/exploded-aar/FtcCommon-release/res/drawable-hdpi-v4/button_shape.xml"
+    },
+    {
+        "merged": "/Users/spencersharp/Desktop/GitHub/Robotics Repositories/2016-2017 4545/4545Ouroboros1617/Team4545/build/intermediates/res/merged/debug/drawable-hdpi-v4/button_shape.xml",
+        "source": "/Users/spencersharp/Desktop/GitHub/Robotics Repositories/2016-2017 4545/4545Ouroboros1617/Team4545/build/intermediates/exploded-aar/FtcCommon-release/res/drawable-hdpi-v4/button_shape.xml"
+    }
+]

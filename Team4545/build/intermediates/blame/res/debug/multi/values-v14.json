@@ -1,0 +1,54 @@
+[
+    {
+        "outputFile": "/Users/spencersharp/Desktop/GitHub/Robotics Repositories/2016-2017 4545/4545Ouroboros1617/Team4545/build/intermediates/res/merged/debug/values-v14/values-v14.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endLine": 4,
+                    "endColumn": 12,
+                    "endOffset": 201
+                },
+                "from": {
+                    "file": "/Users/spencersharp/Desktop/GitHub/Robotics Repositories/2016-2017 4545/4545Ouroboros1617/Team4545/build/intermediates/exploded-aar/4545Ouroboros1617/FtcRobotController/unspecified/res/values-v14/values-v14.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endLine": 4,
+                        "endColumn": 12,
+                        "endOffset": 201
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "/Users/spencersharp/Desktop/GitHub/Robotics Repositories/2016-2017 4545/4545Ouroboros1617/TeamCode/build/intermediates/res/merged/debug/values-v14/values-v14.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endLine": 4,
+                    "endColumn": 12,
+                    "endOffset": 201
+                },
+                "from": {
+                    "file": "/Users/spencersharp/Desktop/GitHub/Robotics Repositories/2016-2017 4545/4545Ouroboros1617/TeamCode/build/intermediates/exploded-aar/4545Ouroboros1617/FtcRobotController/unspecified/res/values-v14/values-v14.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endLine": 4,
+                        "endColumn": 12,
+                        "endOffset": 201
+                    }
+                }
+            }
+        ]
+    }
+]
